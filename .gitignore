@@ -1,0 +1,24 @@
+# Eclipse / Java
+.classpath
+.project
+.settings/
+bin/
+target/
+
+# Compiled files
+*.class
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Node/npm (if present)
+node_modules/
+dist/
