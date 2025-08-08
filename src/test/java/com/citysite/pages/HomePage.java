@@ -1,7 +1,9 @@
 package com.citysite.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
@@ -9,18 +11,23 @@ public class HomePage {
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
-	By jobSeekerButton = By.xpath("//a[@href='#jobseekerLoginModal' and @data-bs-toggle='modal' and @class='button1']");
-	By recruiterButton = By.xpath("//a[@href='#recruiterLoginModal' and @data-bs-toggle='modal' and @class='button2']");
-
+ 
+	@FindBy(xpath="//a[@href='#jobseekerLoginModal' and @data-bs-toggle='modal' and @class='button1']")
+	WebElement jobSeekerButton;
+	
+	
+	@FindBy(xpath="//a[@href='#jobseekerLoginModal' and @data-bs-toggle='modal' and @class='button1']")
+	WebElement recruiterButton;
 	// Actions
 	public void openJobSeekerLogin() {
-		driver.findElement(jobSeekerButton).click();
+		jobSeekerButton.click();
 	}
 
 	public void openRecruiterLogin() {
-		driver.findElement(recruiterButton).click();
+		recruiterButton.click();
 	}
 
 }

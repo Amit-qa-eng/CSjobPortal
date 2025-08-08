@@ -22,28 +22,29 @@ public class LoginTest  extends BaseTest{
 	    public void setupTest() {
 	        setup();
 	        loginPage = new LoginPage(driver);
-	        wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	        wait=new WebDriverWait(driver,Duration.ofSeconds(15));
 	    }
 
 	    @Test(priority = 1)
-	    public void testJobSeekerLogin() throws InterruptedException {
-	        loginPage.openJobSeekerLogin();
-	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
-	        loginPage.enterEmail("testdeveloper30@gmail.com");
-	        loginPage.enterPassword("Test#123?");
-	        loginPage.checkRememberMe();
-	        loginPage.clickLogin();
-	        // Add assertion here for successful login
+	    public void testJobSeekerLogin()  {
+//	     
+	    	
+	    	 loginPage.openJobSeekerLogin();
+	         wait.until(ExpectedConditions.visibilityOf(loginPage.jobSeekerEmailInput));
+	         loginPage.enterJobSeekerEmail("testdeveloper30@gmail.com");
+	         loginPage.enterJobSeekerPassword("Test#123?");
+	         loginPage.checkJobSeekerRememberMe();
+	         loginPage.clickJobSeekerLogin();
 	    }
 
 	    @Test(priority = 2)
-	    public void testRecruiterLogin() throws InterruptedException {
-	        loginPage.openRecruiterLogin();
-	        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")));
-	        loginPage.enterEmail("testdeveloper30@gmail.com");
-	        loginPage.enterPassword("Test#123?");
-	        loginPage.checkRememberMe();
-	        loginPage.clickLogin();
+	    public void testRecruiterLogin()  {
+	    	loginPage.openRecruiterLogin();
+	        wait.until(ExpectedConditions.visibilityOf(loginPage.recruiterEmailInput));
+	        loginPage.enterRecruiterEmail("testdeveloper30@gmail.com");
+	        loginPage.enterRecruiterPassword("Test#123?");
+	        loginPage.checkRecruiterRememberMe();
+	        loginPage.clickRecruiterLogin();
 	        // Add assertion here for successful login
 	    }
 
