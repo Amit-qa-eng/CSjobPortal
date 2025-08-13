@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-08T18:31:09 IST" name="Default suite" finished-at="2025-08-08T18:31:20 IST" duration-ms="10955">
+  <suite started-at="2025-08-13T18:25:14 IST" name="Default suite" finished-at="2025-08-13T18:25:21 IST" duration-ms="6901">
     <groups>
     </groups>
-    <test started-at="2025-08-08T18:31:09 IST" name="Default test" finished-at="2025-08-08T18:31:20 IST" duration-ms="10955">
-      <class name="com.citysite.tests.LoginTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.citysite.tests.LoginTest@35d019a3]" started-at="2025-08-08T18:31:09 IST" name="setupTest" finished-at="2025-08-08T18:31:14 IST" duration-ms="4753" status="PASS">
+    <test started-at="2025-08-13T18:25:14 IST" name="Default test" finished-at="2025-08-13T18:25:21 IST" duration-ms="6901">
+      <class name="com.citysite.tests.JobseekerRegistrationTest">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-13T18:25:14 IST" name="setupTest" finished-at="2025-08-13T18:25:18 IST" duration-ms="3345" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="testJobSeekerLogin()[pri:1, instance:com.citysite.tests.LoginTest@35d019a3]" started-at="2025-08-08T18:31:14 IST" name="testJobSeekerLogin" finished-at="2025-08-08T18:31:15 IST" duration-ms="1086" status="PASS">
+        <test-method signature="testJobseekerRegistration()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-13T18:25:18 IST" name="testJobseekerRegistration" finished-at="2025-08-13T18:25:21 IST" duration-ms="3524" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJobSeekerLogin -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.citysite.tests.LoginTest@35d019a3]" started-at="2025-08-08T18:31:15 IST" name="teardownTest" finished-at="2025-08-08T18:31:15 IST" duration-ms="294" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownTest -->
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.citysite.tests.LoginTest@35d019a3]" started-at="2025-08-08T18:31:15 IST" name="setupTest" finished-at="2025-08-08T18:31:19 IST" duration-ms="3457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupTest -->
-        <test-method signature="testRecruiterLogin()[pri:2, instance:com.citysite.tests.LoginTest@35d019a3]" started-at="2025-08-08T18:31:19 IST" name="testRecruiterLogin" finished-at="2025-08-08T18:31:20 IST" duration-ms="1115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRecruiterLogin -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.citysite.tests.LoginTest@35d019a3]" started-at="2025-08-08T18:31:20 IST" name="teardownTest" finished-at="2025-08-08T18:31:20 IST" duration-ms="209" status="PASS">
+        </test-method> <!-- testJobseekerRegistration -->
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-13T18:25:21 IST" name="teardownTest" finished-at="2025-08-13T18:25:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
-      </class> <!-- com.citysite.tests.LoginTest -->
+      </class> <!-- com.citysite.tests.JobseekerRegistrationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
