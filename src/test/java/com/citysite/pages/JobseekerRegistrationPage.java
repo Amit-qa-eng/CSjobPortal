@@ -50,10 +50,18 @@ public class JobseekerRegistrationPage {
     public
     WebElement genderDropdown;
 
-    @FindBy(xpath = "//input[@name='dob']")
-    public
-    WebElement dobField;
+   // @FindBy(xpath = "//input[@name='dob']")
+  //  public
+  //  WebElement dobField;
 
+    
+    @FindBy(xpath = "//input[@name='dob']")
+    public WebElement dobField;
+
+    @FindBy(xpath = "//span[contains(@class,'flatpickr-day') and contains(@class,'today')]")
+    public WebElement todayDate;
+    
+    
     @FindBy(xpath = "//input[@name='cityname']")
     public
     WebElement cityField;
@@ -95,6 +103,9 @@ public class JobseekerRegistrationPage {
     public
     WebElement submitBtn;
 
+    @FindBy(xpath = "//div[contains(@class,'alert-success')]")
+    public WebElement successMessage;
+    
     // Methods to interact with elements
     public void enterName(String name) {
         fullnameField.sendKeys(name);
@@ -125,10 +136,16 @@ public class JobseekerRegistrationPage {
         new Select(genderDropdown).selectByVisibleText(gender);
     }
 
-    public void enterDOB(String dob) {
-        dobField.sendKeys(dob);
-    }
+//    public void enterDOB(String dob) {
+//        dobField.sendKeys(dob);
+//    }
 
+    public void selectTodayDOB() {
+        dobField.click();        // open calendar
+        todayDate.click();       // pick today's date
+    }
+    
+    
     public void enterCity(String city) {
         cityField.sendKeys(city);
     }

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T18:25:14 IST" name="Default suite" finished-at="2025-08-13T18:25:21 IST" duration-ms="6901">
+  <suite started-at="2025-08-19T16:27:46 IST" name="Default suite" finished-at="2025-08-19T16:27:58 IST" duration-ms="12212">
     <groups>
     </groups>
-    <test started-at="2025-08-13T18:25:14 IST" name="Default test" finished-at="2025-08-13T18:25:21 IST" duration-ms="6901">
+    <test started-at="2025-08-19T16:27:46 IST" name="Default test" finished-at="2025-08-19T16:27:58 IST" duration-ms="12212">
       <class name="com.citysite.tests.JobseekerRegistrationTest">
-        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-13T18:25:14 IST" name="setupTest" finished-at="2025-08-13T18:25:18 IST" duration-ms="3345" status="PASS">
+        <test-method is-config="true" signature="setupTest()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-19T16:27:46 IST" name="setupTest" finished-at="2025-08-19T16:27:49 IST" duration-ms="3273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="testJobseekerRegistration()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-13T18:25:18 IST" name="testJobseekerRegistration" finished-at="2025-08-13T18:25:21 IST" duration-ms="3524" status="PASS">
+        <test-method signature="testJobseekerRegistration()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-19T16:27:49 IST" name="testJobseekerRegistration" finished-at="2025-08-19T16:27:58 IST" duration-ms="8679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJobseekerRegistration -->
-        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-13T18:25:21 IST" name="teardownTest" finished-at="2025-08-13T18:25:21 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardownTest()[pri:0, instance:com.citysite.tests.JobseekerRegistrationTest@55b699ef]" started-at="2025-08-19T16:27:58 IST" name="teardownTest" finished-at="2025-08-19T16:27:58 IST" duration-ms="230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownTest -->
